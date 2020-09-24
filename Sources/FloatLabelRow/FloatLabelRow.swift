@@ -243,6 +243,7 @@ public class URLFloatLabelCell : _FloatLabelCell<URL>, CellType {
     public override func setup() {
         super.setup()
         textField?.keyboardType = .URL
+        textField?.textContentType = .URL
     }
     
 }
@@ -281,6 +282,7 @@ public class AccountFloatLabelCell : _FloatLabelCell<String>, CellType {
         textField?.autocorrectionType = .no
         textField?.autocapitalizationType = .none
         textField?.keyboardType = .asciiCapable
+        textField?.textContentType = .username
     }
     
 }
@@ -301,6 +303,7 @@ public class PasswordFloatLabelCell : _FloatLabelCell<String>, CellType {
         textField?.autocapitalizationType = .none
         textField?.keyboardType = .asciiCapable
         textField?.isSecureTextEntry = true
+        textField?.textContentType = .password
     }
     
 }
@@ -320,6 +323,7 @@ public class NameFloatLabelCell : _FloatLabelCell<String>, CellType {
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .words
         textField.keyboardType = .asciiCapable
+        textField.textContentType = .name
     }
     
 }
@@ -339,6 +343,7 @@ public class EmailFloatLabelCell : _FloatLabelCell<String>, CellType {
         textField?.autocorrectionType = .no
         textField?.autocapitalizationType = .none
         textField?.keyboardType = .emailAddress
+        textField?.textContentType = .emailAddress
     }
     
 }
@@ -356,6 +361,7 @@ public class PhoneFloatLabelCell : _FloatLabelCell<String>, CellType {
     public override func setup() {
         super.setup()
         textField?.keyboardType = .phonePad
+        textField?.textContentType = .telephoneNumber
     }
     
 }
@@ -375,6 +381,7 @@ public class ZipCodeFloatLabelCell: _FloatLabelCell<String>, CellType {
         textField.autocorrectionType = .no
         textField.autocapitalizationType = .allCharacters
         textField.keyboardType = .numbersAndPunctuation
+        textField.textContentType = .postalCode
     }
     
 }
